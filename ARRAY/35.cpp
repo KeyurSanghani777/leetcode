@@ -5,10 +5,10 @@ public:
     int searchInsert(vector<int>& nums, int target) {
         int s=0;
         int e= nums.size()-1;
-
-        bool flag = false;
+        
+        bool flag = false; 
         while(s<e){
-
+            
             int mid=s+(e-s)/2;
             if(nums[mid]==target){
                 flag = true;
@@ -22,15 +22,15 @@ public:
         }
         return s;
 
-
+       
         // return *lower_bound(nums.begin(),nums.end(),target);
-
+        
 
     }
-};
-
-
-
+};                     
+                     
+                     
+                     
 int main()
 {
     //write your code here
