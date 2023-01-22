@@ -7,9 +7,23 @@ using namespace std;
                      
 int main()
 {
-   array<int,5> arr={1,2,3,5,4};
-    for(auto it:arr.begin();it!=arr.end();it++)
+   set<int> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(5);
+
+
+    for(auto i:s)
     {
-        cout<<*it<<" ";
+        cout<<i<<" ";
+    }
+
+    cout<<endl;
+    s.erase(s.begin(),s.begin()+2);
+    for(auto i:s)
+    {
+        cout<<i<<" ";
     }
 }
